@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(196, 241, 225); */
+    background-color: #bfcce0;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(219, 125, 219)205), rgb(223, 76, 223);
+    background-image: url("bg.jpg"); 
+
+}
+
+.container {
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color:white;
+    width: 450px;
+    height: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), -5px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+h1 {
+    background-image: linear-gradient(to right, rgb(10, 10, 10) 0%, black 15%, rgb(87, 45, 185) 100%);
+    text-shadow: 2px 2px 8px #FF0000;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+h1:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.Form {
+    /* padding from all side (top,bottom,left,right) */
+    padding: 40px;
+}
+
+input,
+select {
+    margin-top: 10px;
+    height: 40px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+
+.lable1,
+.lable2 {
+    position: absolute;
+    top: 19px;
+    left: 15px;
+    transition: top .5s;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    font-size: 15px;
+    color: rgb(105, 101, 101);
+    pointer-events: none;
+    
+}
+
+input[type="text"] {
+    padding-left: 7px;
+    border-radius: 5px;
+}
+
+select:focus+span,
+input:focus+span {
+    top: -.1px;
+    background-color: white;
+}
+
+/* select {
+    color: rgb(105, 101, 101);
+} */
+
+
+button {
+    background-image: linear-gradient(to right, rgb(10, 10, 10) 0%, black 15%, rgb(87, 45, 185) 100%);
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: 170px;
+    height: 40px;
+    border: 1px solid rgb(75, 10, 112);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #cfacac;
+    border-radius: 10px;
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-position: right center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+p{
+    padding-top: 15px;
+    padding-left: 60px;
+}

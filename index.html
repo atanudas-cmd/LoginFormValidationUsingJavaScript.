@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADING -->
+        <h1>Login Form</h1>
+        <!-- MAIN FORM -->
+        <form class="Form" method="post">
+
+            <!-- mail  -->
+
+            <div class="main">
+                <input type="text" class="Email" onblur="email1()" onclick="email2()" onkeyup="email3()" required>
+                <span class="lable1">*Email</span>
+                <span class="className1"></span>
+            </div><br>
+
+            <!-- Password  -->
+
+            <div class="main">
+                <input type="text" class="Password" onblur="password1()" onclick="password2()" onkeyup="password3()"
+                    required>
+                <span class="lable2">*Password</span>
+                <span class="className2"></span>
+            </div><br>
+            <center>
+                <button class="button">Login</button>
+            </center>
+
+            <p>Don't have an account?<a href="../RegistrationFormValidation/index.html">Register here</a> </p>
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
